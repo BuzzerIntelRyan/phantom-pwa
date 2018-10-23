@@ -19,7 +19,6 @@
     "@stencil/core": "0.14.0-4"
   },
   "devDependencies": {
-    "@angular/cli": "^7.0.2",
     "workbox-build": "3.4.1"
   }
 }
