@@ -13,17 +13,17 @@ export class AppHome {
         <ion-grid>
 	  <ion-row><ion-col>
 	    <center>
-              <img src="assets/icon/PPLogo.png" alt="logo"></img>
+              <img src="assets/imgs/PPLogo.png" alt="logo"/>
 	    </center>
           </ion-col></ion-row>
 
 	  <ion-row><ion-col text-center>
-	    <button ion-button color="primary">
-	      Existing User Sign In</button>
+	    <ion-button ion-button href="login">
+	      Existing User Sign In</ion-button>
           </ion-col></ion-row>
           <ion-row><ion-col text-center>
-            <button ion-button color="primary">
-	      Create New User</button>
+            <ion-button ion-button href="/newuser">
+	      Create New User</ion-button>
           </ion-col></ion-row>
         </ion-grid>
 
