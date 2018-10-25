@@ -29,3 +29,7 @@
   More info about color theming using Ionic:
   https://beta.ionicframework.com/docs/theming/color-generator
 */
+
+:root {
+  --ion-background-color: #353b5a;
+}
