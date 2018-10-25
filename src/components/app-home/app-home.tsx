@@ -8,17 +8,13 @@ export class AppHome {
 
   render() {
     return [
-      <ion-header>
-        <ion-toolbar color="primary">
-          <ion-title>Home</ion-title>
-        </ion-toolbar>
-      </ion-header>,
-
       <ion-content padding>
 
         <ion-grid>
 	  <ion-row><ion-col>
-            {/*<p><img src={require("assets/icon/PPLogo.png")}></img></p>*/}
+	    <center>
+              <img src="assets/icon/PPLogo.png" alt="logo"></img>
+	    </center>
           </ion-col></ion-row>
 
 	  <ion-row><ion-col text-center>
