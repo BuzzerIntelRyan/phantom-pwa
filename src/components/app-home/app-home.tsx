@@ -18,7 +18,7 @@ export class AppHome {
           </ion-col></ion-row>
 
 	  <ion-row><ion-col text-center>
-	    <ion-button ion-button href="login">
+	    <ion-button ion-button href="/login">
 	      Existing User Sign In</ion-button>
           </ion-col></ion-row>
           <ion-row><ion-col text-center>

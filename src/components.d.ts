@@ -16,6 +16,15 @@ export namespace Components {
   interface AppHome {}
   interface AppHomeAttributes extends StencilHTMLAttributes {}
 
+  interface AppLogin {
+    'password': string;
+    'username': string;
+  }
+  interface AppLoginAttributes extends StencilHTMLAttributes {
+    'password'?: string;
+    'username'?: string;
+  }
+
   interface AppNewuser {}
   interface AppNewuserAttributes extends StencilHTMLAttributes {}
 
@@ -33,6 +42,7 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'AppHome': Components.AppHome;
+    'AppLogin': Components.AppLogin;
     'AppNewuser': Components.AppNewuser;
     'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
@@ -40,6 +50,7 @@ declare global {
 
   interface StencilIntrinsicElements {
     'app-home': Components.AppHomeAttributes;
+    'app-login': Components.AppLoginAttributes;
     'app-newuser': Components.AppNewuserAttributes;
     'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
@@ -50,6 +61,12 @@ declare global {
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppLoginElement extends Components.AppLogin, HTMLStencilElement {}
+  var HTMLAppLoginElement: {
+    prototype: HTMLAppLoginElement;
+    new (): HTMLAppLoginElement;
   };
 
   interface HTMLAppNewuserElement extends Components.AppNewuser, HTMLStencilElement {}
@@ -72,6 +89,7 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement
+    'app-login': HTMLAppLoginElement
     'app-newuser': HTMLAppNewuserElement
     'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
@@ -79,6 +97,7 @@ declare global {
 
   interface ElementTagNameMap {
     'app-home': HTMLAppHomeElement;
+    'app-login': HTMLAppLoginElement;
     'app-newuser': HTMLAppNewuserElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
