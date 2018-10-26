@@ -34,3 +34,8 @@
   --ion-background-color: #353b5a;
   --ion-text-color: #ffffff;
 }
+
+/* for text fields */
+.item.item-input {
+  background-color: black;
+}
