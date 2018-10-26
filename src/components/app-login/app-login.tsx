@@ -25,7 +25,7 @@ export class AppLogin {
     if (!this.password) { console.log("empty password"); return; }
 
     // send http to REST API
-
+    // to do
   } 
 
   render() {
