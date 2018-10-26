@@ -20,6 +20,14 @@ export class AppLogin {
     console.log(this.password);  
   } 
 
+  handleSignIn() {
+    if (!this.username) { console.log("empty username"); return; }
+    if (!this.password) { console.log("empty password"); return; }
+
+    // send http to REST API
+
+  } 
+
   render() {
     return [
 
@@ -59,7 +67,9 @@ export class AppLogin {
           </ion-col></ion-row>
     
           <ion-row><ion-col text-center>
-            <ion-button ion-button color="primary">Sign In</ion-button>
+            <ion-button ion-button color="primary"
+	     onClick={() => { this.handleSignIn() }}>
+	     Sign In</ion-button>
           </ion-col></ion-row>
 	</ion-grid>
       </center></ion-content>
