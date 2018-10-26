@@ -34,7 +34,7 @@ export class AppRoot {
       <ion-app>
         <ion-router useHash={false}>
           <ion-route url="/" component="app-home" />
-          <ion-route url="/profile/:name" component="app-profile" />
+          {/*<ion-route url="/profile/:name" component="app-profile" />*/}
           <ion-route url="/login" component="app-login" />
           <ion-route url="/newuser" component="app-newuser" />
         </ion-router>

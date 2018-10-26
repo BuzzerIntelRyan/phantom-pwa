@@ -27,7 +27,8 @@ export class AppHome {
           </ion-col></ion-row>
         </ion-grid>
 
-        <ion-button href="/profile/ionic" expand="block">Profile page</ion-button>
+        {/*<ion-button href="/profile/ionic" expand="block">
+         Profile page</ion-button>*/}
       </ion-content>
     ];
   }
